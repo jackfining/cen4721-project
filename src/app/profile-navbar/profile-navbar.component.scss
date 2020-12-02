@@ -10,7 +10,8 @@ mat-toolbar {
   }
 
   .logo {
-    margin-left: 175px;
+    margin: auto;
+    margin-top: -15px;
   }
 
   mat-toolbar-row{
@@ -19,6 +20,17 @@ mat-toolbar {
 
   mat-menu-item {
     width: 500px !important;
+  }
+
+  mat-accordion {
+    position: fixed !important;
+    top: 170px;
+  }
+
+  mat-expansion-panel {
+    width: 460px !important;
+    padding-top:20px;
+    padding-bottom:20px;
   }
 
   button {
@@ -35,7 +47,8 @@ mat-toolbar {
     font-family: Impact, fantasy;
     border-style: solid;
     width: 500px;
-    text-align: center;
+    text-align: center !important;
+    flex-basis: 0;
     padding: 5px;
     margin: 20px;
     border-radius: 5px;
@@ -49,7 +62,8 @@ mat-toolbar {
     font-family: Impact, fantasy;
     border-style: solid;
     width: 500px;
-    text-align: center;
+    text-align: center !important;
+    flex-basis: 0;   
     padding: 5px;
     margin: 20px;
     border-radius: 5px;
