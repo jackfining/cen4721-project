@@ -1,0 +1,33 @@
+mat-card {
+    margin-right: 40px;
+}
+
+.user-card {
+    max-width: 225px !important;
+}
+
+mat-card-subtitle {
+    overflow-wrap: break-word;
+}
+
+.heading {
+    margin-top: 40px;
+}
+
+.row {
+    display: flex;
+}
+
+.pfp {
+    width: 225px;
+    height: 225px;
+}
+
+.session {
+    width: 400px;
+    height: 225px;
+}
+
+.avoid-navbar {
+    margin-top: 145px;
+  }

@@ -1,0 +1,101 @@
+.heading {
+    margin-top: 40px;
+}
+
+mat-grid-tile {
+    //background: lightblue;
+  }
+
+mat-icon {
+   // margin-right: 10px;
+}
+
+mat-chip {
+    margin-right: 5px;
+    margin-left: 5px;
+
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+mat-card-title {
+    font-weight: bold;
+    font-size: 28px !important;
+}
+
+.preference-container {
+    margin: auto;
+    width: 1800px;
+    min-height: 500px;
+}
+
+.chip-row {
+    margin-left: 34px;
+}
+
+.inner-card {
+    width: 1000px !important;
+    min-height: 500px !important;
+}
+
+.setting {
+    display: flex;
+}
+
+.current-setting {
+    margin-top: 11px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.current-setting-games {
+    margin-top: 11px;
+    margin-left: 42px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+mat-chip-list {
+    overflow-wrap: break-word;
+}
+
+mat-menu {
+    max-height: 600px !important;
+    overflow: auto !important;
+}
+
+.user-card {
+    max-width: 400px !important;
+}
+
+.pfp {
+    width: 400px;
+    height: 400px;
+}
+
+.preference-block {
+    margin-left: 0px;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    margin-left: 42px;
+
+}
+
+.fav {
+    width: 200px;
+    height: 115px;
+}
+
+.fav-card {
+    width: 200px !important;
+    height: 115px !important;
+    margin-right: 25px;
+}
+
+.avoid-navbar {
+    margin-top: 145px;
+  }
+

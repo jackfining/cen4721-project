@@ -1,0 +1,75 @@
+<app-gamer-navbar></app-gamer-navbar>
+
+<div class="page-body">
+    <div class="avoid-navbar">
+        <h1 class="heading">Terry's Profile</h1>
+        <div class="preference-container">
+            <mat-grid-list cols="4" rowHeight="600px">
+                <!---------- PROFILE PICTURE ---------->
+                <mat-grid-tile [colspan]=1>
+                    <mat-card class="user-card">
+                        <mat-card-content>
+                            <img class="pfp" mat-card-image
+                                src="https://store.playstation.com/store/api/chihiro/00_09_000/container/US/en/999/UP1415-CUSA03724_00-AV00000000000106/1601172491000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000'">
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button color="primary">ADD FRIEND</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-grid-tile>
+
+                <!---------- USER PREFERENCES ---------->
+                <mat-grid-tile class="preference-block" [colspan]=3>
+                    <mat-card class="inner-card">
+                        <mat-card-header>
+                            <mat-card-title>Terry's Preferences</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+
+                            <!---------- USERNAME SETTINGS ---------->
+                            <div class="setting">
+                                <p class="current-setting-games">Username: Terry</p>
+                            </div>
+
+                            <!---------- FAVORITE SYSTEM SETTINGS ---------->
+                            <div class="setting">
+                                <p class="current-setting-games">Systems:</p>
+                            </div>
+                            <div class="chip-row">
+                                <mat-chip-list>
+                                    <mat-chip *ngFor="let chip of systems" selected="true" color="primary">
+                                        {{chip.name}}
+                                    </mat-chip>
+                                </mat-chip-list>
+                            </div>
+
+                            <!---------- FAVORITE GENRE SETTINGS ---------->
+                            <div class="setting">
+                                <p class="current-setting-games">Genres:</p>
+                            </div>
+                            <div class="chip-row">
+                                <mat-chip-list>
+                                    <mat-chip *ngFor="let chip of genres" selected="true" color="accent">
+                                        {{chip.name}}
+                                    </mat-chip>
+                                </mat-chip-list>
+                            </div>
+
+                            <!---------- FAVORITE GAME SETTINGS ---------->
+                            <div class="setting">
+                                <p class="current-setting-games">Favorite Games:</p>
+                            </div>
+                            <div class="row">
+                                <mat-card *ngFor="let game of games" class="fav-card">
+                                    <mat-card-content>
+                                        <img class="fav" mat-card-image src={{game.img}}>
+                                    </mat-card-content>
+                                </mat-card>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+</div>

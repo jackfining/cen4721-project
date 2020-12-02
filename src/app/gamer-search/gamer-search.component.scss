@@ -1,0 +1,52 @@
+.tab {
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+mat-form-field {
+    width: 350px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+mat-card {
+    margin-right: 40px;
+}
+
+::ng-deep .mat-tab-label .mat-tab-label-content {
+    font-size: 18px !important;
+}
+
+.game-group {
+    border-style: outset;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.user-card {
+    max-width: 225px !important;
+}
+
+mat-card-subtitle {
+    overflow-wrap: break-word;
+}
+
+.pfp {
+    width: 225px;
+    height: 225px;
+}
+
+.banner {
+    width: 400px;
+    height: 225px;
+    margin-bottom: 20px;
+}
+
+.avoid-navbar {
+    margin-top: 145px;
+  }

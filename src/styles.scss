@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'angular-material-demo-theme.scss';
+//@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+  margin: 0;
+}
+/*
+.grid-test-1 > figure.mat-figure {
+  justify-content: flex-start !important;
+}
+*/
+h1 {
+  font-size: 48px;
+  font-family: Impact, fantasy;
+}
+
+h2 {
+  font-size: 38px;
+  font-family: Impact, fantasy;
+  font-weight: normal;
+}
+
+.page-body{
+  margin-left: 30px;
+}

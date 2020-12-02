@@ -1,0 +1,69 @@
+<app-gamer-navbar></app-gamer-navbar>
+
+<div class="avoid-navbar">
+    <mat-tab-group mat-align-tabs="center" backgroundColor="primary">
+        <mat-tab label="Search by Games Played">
+            <div class="tab">
+                <!-- <mat-form-field>
+                    <input matInput placeholder="Enter Game">
+                </mat-form-field>
+                <button mat-icon-button>
+                    <mat-icon>search</mat-icon>
+                </button> -->
+                <h2>Mutual Favorite Games</h2>
+                <ng-container *ngFor="let game of games">
+                    <div class=game-group>
+                        <img class="banner" src={{game.img}} />
+                        <div class="row">
+                            <ng-container *ngFor="let user of gamers">
+                                <mat-card class="user-card" *ngIf="user.game === game.name">
+                                    <mat-card-content>
+                                        <img class="pfp" mat-card-image src={{user.img}}>
+                                    </mat-card-content>
+                                    <mat-card-header>
+                                        <mat-card-title>{{user.name}}</mat-card-title>
+                                        <mat-card-subtitle>{{user.criteria}}</mat-card-subtitle>
+                                    </mat-card-header>
+                                    <mat-card-actions>
+                                        <button mat-button color="primary" routerLink="/gamers/users/terry">VIEW
+                                            PROFILE</button>
+                                    </mat-card-actions>
+                                </mat-card>
+                            </ng-container>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </mat-tab>
+        <mat-tab label="Search by System Owned">
+            <div class="tab">
+                <mat-form-field>
+                    <input matInput placeholder="Select System">
+                </mat-form-field>
+                <button mat-icon-button>
+                    <mat-icon>search</mat-icon>
+                </button>
+            </div>
+        </mat-tab>
+        <mat-tab label="Search by Genre Played">
+            <div class="tab">
+                <mat-form-field>
+                    <input matInput placeholder="Select Genre">
+                </mat-form-field>
+                <button mat-icon-button>
+                    <mat-icon>search</mat-icon>
+                </button>
+            </div>
+        </mat-tab>
+        <mat-tab label="Search by Username">
+            <div class="tab">
+                <mat-form-field>
+                    <input matInput placeholder="Enter Username">
+                </mat-form-field>
+                <button mat-icon-button>
+                    <mat-icon>search</mat-icon>
+                </button>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

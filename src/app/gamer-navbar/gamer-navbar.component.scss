@@ -1,0 +1,50 @@
+mat-toolbar {
+    height: 115px;
+  }
+
+  .navbar {
+    position: fixed !important;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin: 15px;
+  }
+  
+  .heading-container {
+    margin: auto;
+    //width: 50%;
+  }
+  
+  .heading-current {
+    font-size: 36px;
+    font-family: Impact, fantasy;
+    border-style: solid;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 5px;
+    border-color: white;
+    color: #673ab7;
+    background-color: white;
+  }
+  
+  .heading {
+    font-size: 36px;
+    font-family: Impact, fantasy;
+    border-style: solid;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 5px;
+    border-color: white;
+  }
+  
+  .heading-options {
+    font-size: 22px;
+    font-family: Stencil Std, fantasy;
+  }
