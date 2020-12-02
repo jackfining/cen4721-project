@@ -1,24 +1,37 @@
 <mat-toolbar color="primary" class="navbar">
+  <mat-toolbar-row>
     <img class="logo" src="./../assets/3-112.png">
-    <div class="heading-container">
-      <button class="heading-current" mat-button routerLink="/home">
-        HOME
-      </button>
-      <button class="heading" mat-button [matMenuTriggerFor]="gamerMenu">
-        GAMERS
-      </button>
-      <mat-menu #gamerMenu="matMenu">
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="heading-current" routerLink="/home">
+            HOME
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="heading">
+            GAMERS
+          </mat-panel-title>
+        </mat-expansion-panel-header>
         <button mat-menu-item routerLink="/gamers/search">
-          <span class="heading-options" >Search Gamers</span>
+          <span class="heading-options">Search Gamers</span>
         </button>
         <button mat-menu-item>
           <span class="heading-options">Recommended Gamers</span>
         </button>
-      </mat-menu>
-      <button class="heading" mat-button [matMenuTriggerFor]="gameMenu">
-        GAMES
-      </button>
-      <mat-menu #gameMenu="matMenu">
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="heading">
+            GAMES
+          </mat-panel-title>
+        </mat-expansion-panel-header>
         <button mat-menu-item disabled>
           <span class="heading-options">View Games</span>
         </button>
@@ -28,11 +41,14 @@
         <button mat-menu-item disabled>
           <span class="heading-options">Recommended Games</span>
         </button>
-      </mat-menu>
-      <button class="heading" mat-button [matMenuTriggerFor]="sessionMenu">
-        SESSIONS
-      </button>
-      <mat-menu #sessionMenu="matMenu">
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="heading">
+            SESSIONS
+          </mat-panel-title>
+        </mat-expansion-panel-header>
         <button mat-menu-item disabled>
           <span class="heading-options">Start Session</span>
         </button>
@@ -42,11 +58,14 @@
         <button mat-menu-item disabled>
           <span class="heading-options">Recommended Sessions</span>
         </button>
-      </mat-menu>
-      <button class="heading" mat-button [matMenuTriggerFor]="myMenu">
-        PROFILE
-      </button>
-      <mat-menu #myMenu="matMenu">
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="heading">
+            PROFILE
+          </mat-panel-title>
+        </mat-expansion-panel-header>
         <button mat-menu-item routerLink="/profile">
           <span class="heading-options">My Profile</span>
         </button>
@@ -56,6 +75,8 @@
         <button mat-menu-item>
           <span class="heading-options">My Friends</span>
         </button>
-      </mat-menu>
-    </div>
-  </mat-toolbar>
+      </mat-expansion-panel>
+
+    </mat-accordion>
+  </mat-toolbar-row>
+</mat-toolbar>

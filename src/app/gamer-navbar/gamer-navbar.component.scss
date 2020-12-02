@@ -1,50 +1,78 @@
 mat-toolbar {
-    height: 115px;
-  }
+  width: 500px;
+  height: 100%;
+}
 
-  .navbar {
-    position: fixed !important;
-    top: 0px;
-    overflow: hidden;
-    z-index: 1000;
-  }
-  
-  .logo {
-    margin: 15px;
-  }
-  
-  .heading-container {
-    margin: auto;
-    //width: 50%;
-  }
-  
-  .heading-current {
-    font-size: 36px;
-    font-family: Impact, fantasy;
-    border-style: solid;
-    width: 200px;
-    text-align: center;
-    padding: 5px;
-    margin: 20px;
-    border-radius: 5px;
-    border-color: white;
-    color: #673ab7;
-    background-color: white;
-  }
-  
-  .heading {
-    font-size: 36px;
-    font-family: Impact, fantasy;
-    border-style: solid;
-    width: 200px;
-    text-align: center;
-    padding: 5px;
-    margin: 20px;
-    border-radius: 5px;
-    border-color: white;
-  }
-  
-  .heading-options {
-    font-size: 22px;
-    font-family: Stencil Std, fantasy;
-  }
+.navbar {
+  position: fixed !important;
+  top: 0px;
+  z-index: 1000;
+}
+
+.logo {
+  margin: auto;
+  margin-top: -15px;
+}
+
+mat-toolbar-row{
+  margin-top: 40px;
+}
+
+mat-menu-item {
+  width: 500px !important;
+}
+
+mat-accordion {
+  position: fixed !important;
+  top: 150px;
+}
+
+mat-expansion-panel {
+  width: 460px !important;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+button {
+  width: 500px !important;
+}
+
+.heading-container {
+  margin: auto;
+  //width: 50%;
+}
+
+.heading-current {
+  font-size: 36px;
+  font-family: Impact, fantasy;
+  border-style: solid;
+  width: 500px;
+  text-align: center !important;
+  flex-basis: 0;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 5px;
+  border-color: white;
+  color: #673ab7;
+  background-color: white;
+}
+
+.heading {
+  font-size: 36px;
+  font-family: Impact, fantasy;
+  border-style: solid;
+  width: 500px;
+  text-align: center !important;
+  flex-basis: 0;   
+  padding: 5px;
+  margin: 20px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+.heading-options {
+  font-size: 22px;
+  font-family: Stencil Std, fantasy;
+}

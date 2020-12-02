@@ -24,11 +24,13 @@ mat-toolbar {
 
   mat-accordion {
     position: fixed !important;
-    top: 170px;
+    top: 150px;
   }
 
   mat-expansion-panel {
     width: 460px !important;
+    margin-top:20px;
+    margin-bottom:20px;
     padding-top:20px;
     padding-bottom:20px;
   }
