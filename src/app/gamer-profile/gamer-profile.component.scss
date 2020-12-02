@@ -1,13 +1,6 @@
 .heading {
     margin-top: 40px;
-}
-
-mat-grid-tile {
-    //background: lightblue;
-  }
-
-mat-icon {
-   // margin-right: 10px;
+    margin-left: 40px;
 }
 
 mat-chip {
@@ -16,6 +9,7 @@ mat-chip {
 
     margin-top: -10px;
     margin-bottom: 10px;
+    
 }
 
 mat-card-title {
@@ -25,8 +19,8 @@ mat-card-title {
 
 .preference-container {
     margin: auto;
-    width: 1800px;
-    min-height: 500px;
+    width: 1700px;
+    height: 1500px;
 }
 
 .chip-row {
@@ -61,7 +55,11 @@ mat-chip-list {
 
 mat-menu {
     max-height: 600px !important;
-    overflow: auto !important;
+}
+
+mat-grid-list {
+    margin-top: -20px;
+    margin-left: 40px;
 }
 
 .user-card {
@@ -75,23 +73,30 @@ mat-menu {
 
 .preference-block {
     margin-left: 0px;
+    margin-top: -180px;
+    height: 1500px !important;
     display: flex;
 }
 
 .row {
-    display: flex;
     margin-left: 42px;
-
 }
 
 .fav {
-    width: 200px;
-    height: 115px;
+    width: 170px;
+    height: 95px;
+    padding: 5px;
 }
 
 .fav-card {
-    width: 200px !important;
-    height: 115px !important;
-    margin-right: 25px;
+    width: 750px !important;
+    height: 100px !important;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.fav-title {
+    font-size: 20px !important;
+    margin-top: 38px !important;
+}

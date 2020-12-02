@@ -60,9 +60,9 @@
                             </div>
                             <div class="row">
                                 <mat-card *ngFor="let game of games" class="fav-card">
-                                    <mat-card-content>
                                         <img class="fav" mat-card-image src={{game.img}}>
-                                    </mat-card-content>
+                                        <mat-card-title class="fav-title">{{game.name}}</mat-card-title>
+                                        <button class="fav-button" mat-button disabled>VIEW GAME</button>
                                 </mat-card>
                             </div>
                         </mat-card-content>

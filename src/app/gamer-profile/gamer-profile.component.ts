@@ -8,28 +8,28 @@ import { Component, OnInit } from '@angular/core';
 export class GamerProfileComponent implements OnInit {
 
   public systems = [
+    { name: 'Android' , brand: 'Mobile', own: false},
+    { name: 'Nintendo DS', brand: 'Nintendo', own: false },
+    { name: 'Nintendo Game Boy Advance', brand: 'Nintendo', own: false },
+    { name: 'PC' , own: true},
+    { name: 'PlayStation 2', brand: 'Sony', own: true },
     { name: 'PlayStation 3', brand: 'Sony', own: false },
     { name: 'PlayStation Portable', brand: 'Sony', own: false },
-    { name: 'PlayStation 2', brand: 'Sony', own: true },
+    { name: 'Super Nintendo Entertainment System', brand: 'Nintendo', own: false },
     { name: 'Xbox One', brand: 'Microsoft', own: false },
-    { name: 'Xbox 360', brand: 'Microsoft', own: true },
-    { name: 'DS', brand: 'Nintendo', own: false },
-    { name: 'Game Boy Advance', brand: 'Nintendo', own: false },
-    { name: 'Super NES', brand: 'Nintendo', own: false },
-    { name: 'PC' , own: true},
-    { name: 'Android' , brand: 'Mobile', own: false}
+    { name: 'Xbox 360', brand: 'Microsoft', own: true }
   ];
 
   public genres = [
     { name: 'Action', favorite: true },
-    { name: 'Shooter', favorite: false },
     { name: 'Fighting', favorite: false },
-    { name: 'Survival', favorite: false },
+    { name: 'MMO', favorite: false },
+    { name: 'Racing', favorite: false },
     { name: 'RPG', favorite: true },
-    { name: 'Tactical', favorite: false },
-    { name: 'MOBA', favorite: false },
     { name: 'RTS', favorite: false },
-    { name: 'Racing', favorite: false }
+    { name: 'Shooter', favorite: false },
+    { name: 'Survival', favorite: false },
+    { name: 'Tactical', favorite: false }
   ];
 
   public games = [
