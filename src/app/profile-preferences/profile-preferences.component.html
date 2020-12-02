@@ -46,41 +46,9 @@
                                     <mat-icon>edit</mat-icon>
                                 </button>
                                 <mat-menu #systemMenu="matMenu">
-                                    <button mat-menu-item [matMenuTriggerFor]="sony">Sony</button>
-                                    <button mat-menu-item [matMenuTriggerFor]="microsoft">Microsoft</button>
-                                    <button mat-menu-item [matMenuTriggerFor]="nintendo">Nintendo</button>
-                                    <mat-checkbox class="mat-menu-item" color="primary" [(ngModel)]="systems[20].own"
-                                        (click)="openEditSystems()">PC</mat-checkbox>
-                                    <button mat-menu-item [matMenuTriggerFor]="mobile">Mobile</button>
-                                </mat-menu>
-                                <mat-menu #sony="matMenu">
                                     <ng-container *ngFor="let box of systems">
-                                        <mat-checkbox class="mat-menu-item" *ngIf="box.brand == 'Sony'" color="primary"
-                                            [(ngModel)]="box.own" (click)="openEditSystems()">
-                                            {{box.name}}
-                                        </mat-checkbox>
-                                    </ng-container>
-                                </mat-menu>
-                                <mat-menu #microsoft="matMenu">
-                                    <ng-container *ngFor="let box of systems">
-                                        <mat-checkbox class="mat-menu-item" *ngIf="box.brand == 'Microsoft'"
-                                            color="primary" [(ngModel)]="box.own" (click)="openEditSystems()">
-                                            {{box.name}}
-                                        </mat-checkbox>
-                                    </ng-container>
-                                </mat-menu>
-                                <mat-menu #nintendo="matMenu">
-                                    <ng-container *ngFor="let box of systems">
-                                        <mat-checkbox class="mat-menu-item" *ngIf="box.brand == 'Nintendo'"
-                                            color="primary" [(ngModel)]="box.own" (click)="openEditSystems()">
-                                            {{box.name}}
-                                        </mat-checkbox>
-                                    </ng-container>
-                                </mat-menu>
-                                <mat-menu #mobile="matMenu">
-                                    <ng-container *ngFor="let box of systems">
-                                        <mat-checkbox class="mat-menu-item" *ngIf="box.brand == 'Mobile'"
-                                            color="primary" [(ngModel)]="box.own" (click)="openEditSystems()">
+                                        <mat-checkbox class="mat-menu-item" [(ngModel)]="box.own"
+                                            (click)="openEditSystems()">
                                             {{box.name}}
                                         </mat-checkbox>
                                     </ng-container>

@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module'; // CLI imports AppRoutingModule
-
 import { AppMaterialModule } from './app.material.module';
 import { AppComponent, DialogContentComponent } from './app.component';
 import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
@@ -20,7 +19,7 @@ import { GamerSearchComponent } from './gamer-search/gamer-search.component';
     FormsModule,
     AppMaterialModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   declarations: [AppComponent, DialogContentComponent,
     HomeNavbarComponent, HomeRecommendationsComponent,
