@@ -1,61 +1,71 @@
 <mat-toolbar color="primary" class="navbar">
+  <mat-toolbar-row>
     <img class="logo" src="./../assets/3-112.png">
-    <div class="heading-container">
-      <button class="heading" mat-button routerLink="/home">
-        HOME
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <button class="heading" mat-button routerLink="/home">
+      HOME
+    </button>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <button class="heading" mat-button [matMenuTriggerFor]="gamerMenu">
+      GAMERS
+    </button>
+    <mat-menu #gamerMenu="matMenu">
+      <button mat-menu-item routerLink="/gamers/search">
+        <span class="heading-options">Search Gamers</span>
       </button>
-      <button class="heading" mat-button [matMenuTriggerFor]="gamerMenu">
-        GAMERS
+      <button mat-menu-item>
+        <span class="heading-options">Recommended Gamers</span>
       </button>
-      <mat-menu #gamerMenu="matMenu">
-        <button mat-menu-item routerLink="/gamers/search">
-          <span class="heading-options" >Search Gamers</span>
-        </button>
-        <button mat-menu-item>
-          <span class="heading-options">Recommended Gamers</span>
-        </button>
-      </mat-menu>
-      <button class="heading" mat-button [matMenuTriggerFor]="gameMenu">
-        GAMES
+    </mat-menu>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <button class="heading" mat-button [matMenuTriggerFor]="gameMenu">
+      GAMES
+    </button>
+    <mat-menu #gameMenu="matMenu">
+      <button mat-menu-item disabled>
+        <span class="heading-options">View Games</span>
       </button>
-      <mat-menu #gameMenu="matMenu">
-        <button mat-menu-item disabled>
-          <span class="heading-options">View Games</span>
-        </button>
-        <button mat-menu-item disabled>
-          <span class="heading-options">Search Games</span>
-        </button>
-        <button mat-menu-item disabled>
-          <span class="heading-options">Recommended Games</span>
-        </button>
-      </mat-menu>
-      <button class="heading" mat-button [matMenuTriggerFor]="sessionMenu">
-        SESSIONS
+      <button mat-menu-item disabled>
+        <span class="heading-options">Search Games</span>
       </button>
-      <mat-menu #sessionMenu="matMenu">
-        <button mat-menu-item disabled>
-          <span class="heading-options">Start Session</span>
-        </button>
-        <button mat-menu-item disabled>
-          <span class="heading-options">Search Sessions</span>
-        </button>
-        <button mat-menu-item disabled>
-          <span class="heading-options">Recommended Sessions</span>
-        </button>
-      </mat-menu>
-      <button class="heading-current" mat-button [matMenuTriggerFor]="myMenu">
-        PROFILE
+      <button mat-menu-item disabled>
+        <span class="heading-options">Recommended Games</span>
       </button>
-      <mat-menu #myMenu="matMenu" routerLink="/profile">
-        <button mat-menu-item>
-          <span class="heading-options">My Profile</span>
-        </button>
-        <button mat-menu-item>
-          <span class="heading-options">My Games</span>
-        </button>
-        <button mat-menu-item>
-          <span class="heading-options">My Friends</span>
-        </button>
-      </mat-menu>
-    </div>
-  </mat-toolbar>
+    </mat-menu>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <button class="heading" mat-button [matMenuTriggerFor]="sessionMenu">
+      SESSIONS
+    </button>
+    <mat-menu #sessionMenu="matMenu">
+      <button mat-menu-item disabled>
+        <span class="heading-options">Start Session</span>
+      </button>
+      <button mat-menu-item disabled>
+        <span class="heading-options">Search Sessions</span>
+      </button>
+      <button mat-menu-item disabled>
+        <span class="heading-options">Recommended Sessions</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <button class="heading-current" mat-button [matMenuTriggerFor]="myMenu">
+      PROFILE
+    </button>
+    <mat-menu #myMenu="matMenu" routerLink="/profile">
+      <button mat-menu-item>
+        <span class="heading-options">My Profile</span>
+      </button>
+      <button mat-menu-item>
+        <span class="heading-options">My Games</span>
+      </button>
+      <button mat-menu-item>
+        <span class="heading-options">My Friends</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>

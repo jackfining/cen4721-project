@@ -1,16 +1,28 @@
 mat-toolbar {
-    height: 115px;
+    width: 500px;
+    height: 100%;
   }
 
   .navbar {
     position: fixed !important;
     top: 0px;
-    overflow: hidden;
     z-index: 1000;
   }
-  
+
   .logo {
-    margin: 15px;
+    margin-left: 175px;
+  }
+
+  mat-toolbar-row{
+    margin-top: 40px;
+  }
+
+  mat-menu-item {
+    width: 500px !important;
+  }
+
+  button {
+    width: 500px !important;
   }
   
   .heading-container {
@@ -22,7 +34,7 @@ mat-toolbar {
     font-size: 36px;
     font-family: Impact, fantasy;
     border-style: solid;
-    width: 200px;
+    width: 500px;
     text-align: center;
     padding: 5px;
     margin: 20px;
@@ -36,7 +48,7 @@ mat-toolbar {
     font-size: 36px;
     font-family: Impact, fantasy;
     border-style: solid;
-    width: 200px;
+    width: 500px;
     text-align: center;
     padding: 5px;
     margin: 20px;

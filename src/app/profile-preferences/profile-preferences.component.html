@@ -97,13 +97,9 @@
                             <div class="row">
                                 <ng-container *ngFor="let game of games">
                                     <mat-card *ngIf="game.favorite == true" class="fav-card">
-                                        <mat-card-content>
-                                            <img class="fav" mat-card-image src={{game.img}}>
-                                        </mat-card-content>
-                                        <mat-card-actions>
-                                            <button mat-button color="warn"
-                                                [matMenuTriggerFor]="gameMenu">CHANGE</button>
-                                        </mat-card-actions>
+                                        <img class="fav" mat-card-image src={{game.img}}>
+                                        <mat-card-title class="fav-title">{{game.name}}</mat-card-title>
+                                        <button class="fav-button" mat-button color="warn" [matMenuTriggerFor]="gameMenu">CHANGE</button>
                                     </mat-card>
                                     <mat-menu #gameMenu="matMenu">
                                         <ng-container *ngFor="let box of games">
