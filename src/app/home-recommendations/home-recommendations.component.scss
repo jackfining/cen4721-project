@@ -3,7 +3,27 @@ mat-card {
 }
 
 .user-card {
-    max-width: 225px !important;
+    width: 800px !important;
+    height: 80px !important;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.session-card{
+    width: 600px !important;
+    height: 225px !important;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stack {
+    margin-left: 18px;
+}
+
+.vm {
+    margin-left: 3px;
 }
 
 mat-card-subtitle {
@@ -14,13 +34,13 @@ mat-card-subtitle {
     margin-top: 40px;
 }
 
-.row {
-    display: flex;
+.g-row {
+    margin-top: -170px;
 }
 
 .pfp {
-    width: 225px;
-    height: 225px;
+    width: 95px;
+    height: 95px;
 }
 
 .session {
