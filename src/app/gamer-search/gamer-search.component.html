@@ -12,7 +12,7 @@
                 </button> -->
                 <h2>Mutual Favorite Games</h2>
                 <ng-container *ngFor="let game of games">
-                    <div class=game-group>
+                    <mat-card class=game-group>
                         <img class="banner" src={{game.img}} />
                         <div class="row">
                             <ng-container *ngFor="let user of gamers">
@@ -31,7 +31,7 @@
                                 </mat-card>
                             </ng-container>
                         </div>
-                    </div>
+                    </mat-card>
                 </ng-container>
             </div>
         </mat-tab>
