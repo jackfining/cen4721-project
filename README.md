@@ -23,6 +23,7 @@ The "master" branch represents version A of this user study. The "b-test" branch
 Run the following to switch to one of the desired version if Git is installed:
 
 `$ git fetch`
+
 `$ git checkout <branch-name>`
 
 If Git is not installed, change the branch on this page and download the version you desire.
