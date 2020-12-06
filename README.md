@@ -10,7 +10,7 @@ This application is a social profile explorer for users with interests in video 
 Requires Node for "node" and "npm", which are required to run and install application (https://nodejs.org/en/download/)
 
 Once installed, run the following to install Angular and associated dependencies:
-$ npm install
+`npm install`
 
 Next, run the following to run the application locally. Then navigate to http://localhost:4200/ to view:
 $ ng serve
