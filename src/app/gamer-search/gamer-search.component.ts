@@ -33,6 +33,15 @@ export class GamerSearchComponent implements OnInit {
     { name: 'zeldalol   ', game: 'Super Smash Bros. Ultimate', img: 'https://yt3.ggpht.com/a/AGF-l7_k69Pv4KISEuHPgIFXKPkEGP9PjQ7FB-GlAQ=s240-c-k-c0xffffffff-no-rj-mo' },
     { name: 'Mew2Guy    ', game: 'Super Smash Bros. Ultimate', img: 'https://i1.sndcdn.com/avatars-000192768620-y9lak2-t500x500.jpg' },
 
+    { name: 'FreeMelee  ', game: 'Super Smash Bros. Ultimate', img: 'https://themushroomkingdom.net/images/ssbm/doublej_mario_fox.jpg' },
+    { name: 'ScythER    ', game: 'Super Smash Bros. Ultimate', img: 'https://avatarfiles.alphacoders.com/212/thumb-212690.jpg' },
+    { name: 'LuckyLu    ', game: 'Persona 5 Royal', img: 'https://i.pinimg.com/originals/29/d1/72/29d172e0191ac54f86450eb6670c9c5f.jpg' },
+    { name: 'Specialist1', game: 'Persona 5 Royal', img: 'https://steamuserimages-a.akamaihd.net/ugc/1171447196876108371/7A250EC6CBE016722C1978F9295AD9B8F3962734/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false' },
+    { name: 'RealDoomGuy', game: 'Doom (2016)', img: 'https://giantbomb1.cbsistatic.com/uploads/original/1/16944/2976271-flat%2C800x800%2C075%2Cf.jpg' },
+    { name: 'MasterChef ', game: 'Doom (2016)', img: 'https://i.pinimg.com/originals/52/b6/b7/52b6b7fe3cfb94fa49fb94ad44eb3315.jpg' },
+    { name: 'ImposterBro', game: 'Among Us', img: 'https://cdn2.myminifactory.com/assets/object-assets/5f621baf8055d/images/720X720-imposter.jpg' },
+    { name: 'That_Guy   ', game: 'Among Us', img: 'https://avatarfiles.alphacoders.com/211/thumb-211078.jpg' },
+
   ];
 
   public games = [
